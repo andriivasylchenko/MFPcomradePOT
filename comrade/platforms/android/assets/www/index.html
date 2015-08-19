@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="js/app.js"></script>
+
+    <script src="cordova.js"></script>
+
+
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7">
+  <div>
+    <div>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button></ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view></ion-nav-view>
+    </div>
+</div>
+<script id="page2.html" type="text/ng-template">
+<ion-view title="Login">
+    <ion-content padding="true" class="has-header">
+        <form>
+            <div style="line-height: 250px; border: 1px solid rgb(238, 238, 238); border-radius: 3px; text-align: center; width: 100%; height: auto; background-color: rgb(255, 255, 255);">
+                <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
+            </div>
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">Username</span>
+                    <input type="text" placeholder="">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" placeholder="">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <a href="#/main" class="button button-positive button-block ">Log in</a>
+        </form>
+    </ion-content>
+</ion-view></script>
+<script id="page3.html" type="text/ng-template">
+<ion-view title="Comrades">
+    <ion-content padding="true" class="has-header">
+        <ion-list>
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" placeholder="">
+            </label>
+            <ion-item class="item-thumbnail-left">
+                <img src="/img/avatar-img.png">
+                <h2>Comrade name</h2>
+                <p>Comrade job role</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view></script>
+<script id="page4.html" type="text/ng-template">
+<ion-view title="Comrade detail">
+    <ion-content padding="true" class="has-header">
+        <ion-list>
+            <ion-item class="item-thumbnail-left">
+                <img src="/img/avatar-img.png">
+                <h2>Comrade name</h2>
+                <p>Comrade job role</p>
+            </ion-item>
+            <ion-item>Send email</ion-item>
+            <ion-item>Call to the office</ion-item>
+            <ion-item>Call to mobile</ion-item>
+            <ion-item>Send sms</ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view></script>
+  <script src="js/index.js"></script>
+  </body>
+</html>
